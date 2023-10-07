@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "name": "Event Listings and Information",
+        "shortDescription": "Discover upcoming workshops, webinars, and training events with detailed schedules and registration information, all in one place.",
+        "detailedDescription": "Welcome to our comprehensive and regularly updated platform, your go-to source for upcoming educational and training events. Discover a wide array of enriching opportunities, categorized meticulously for your convenience. Each event listing includes detailed information such as event name, date, venue, agenda, and registration details. Stay informed and engage in events tailored to your interests effortlessly.",
+        "price": "$500",
+        "image": "https://i.ibb.co/QDWGgnf/listing.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Event Registration and Ticketing",
+        "shortDescription": "Seamlessly register for events and purchase tickets online, ensuring a hassle-free experience for both attendees and organizers.",
+        "detailedDescription": "Streamline your event experience with our integrated registration and ticketing service. Effortlessly sign up for events directly on our platform, enjoying the ease of secure payment gateways and prompt electronic ticket issuance upon registration. We prioritize convenience for both organizers and participants, ensuring a hassle-free registration process for all attendees.",
+        "price": "$350",
+        "image": "https://i.ibb.co/QbGs65Z/ticketing.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Event Promotion and Marketing",
+        "shortDescription": "Boost event visibility through targeted marketing services, including email campaigns and social media promotions, maximizing audience engagement.",
+        "detailedDescription": "Maximize the visibility of your workshops, webinars, and training programs with our dedicated event promotion and marketing services. Benefit from targeted email campaigns, strategic social media promotions, and prime event placements on our website. Gain insights into the reach and engagement of your events through detailed analytics, allowing you to fine-tune your promotional strategies for optimal impact.",
+        "price": "$250",
+        "image": "https://i.ibb.co/Wt4SXST/promotion.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Virtual Event Hosting Platform",
+        "shortDescription": "Host interactive online events with live streaming, Q&A sessions, and networking features, creating engaging virtual learning experiences.",
+        "detailedDescription": "Embrace the future of learning with our state-of-the-art virtual event hosting platform. Host engaging webinars and online workshops with features like seamless live streaming, interactive Q&A sessions, dynamic breakout rooms, and valuable networking opportunities. Our user-friendly platform supports various devices, ensuring accessibility for a diverse and global audience. Elevate your virtual events with our robust hosting solutions.",
+        "price": "$600",
+        "image": "https://i.ibb.co/zQgCt8X/virtualhosting.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Educational Resources and Materials",
+        "shortDescription": "Access a wealth of educational content, including downloadable materials, articles, videos, and exclusive resources, enhancing learning beyond events.",
+        "detailedDescription": "Dive into a world of knowledge through our educational resources section. Access a wealth of learning materials, including downloadable resources, thought-provoking whitepapers, insightful articles, and enlightening videos. Immerse yourself in exclusive content curated in collaboration with speakers and trainers, enhancing your learning journey beyond the events. Enrich your understanding and broaden your horizons with our curated educational materials.",
+        "price": "$120",
+        "image": "https://i.ibb.co/Q6y4b7m/resources.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Career Fair Arrangement and Training Resources",
+        "shortDescription": "Explore comprehensive career guidance resources, from skill development to job search strategies, empowering individuals in their professional journey.",
+        "detailedDescription": "Navigate your career path with confidence using our dedicated career guidance and training resources. Explore a plethora of articles, guides, and tools designed to foster skill development, aid in career planning, refine resume-building techniques, prepare you for interviews, and empower your job search strategies. Benefit from the wisdom of career counselors and industry experts, gaining valuable insights and personalized advice to shape your professional journey.",
+        "price": "$400",
+        "image": "https://i.ibb.co/3CYz0kz/training2.jpg"
+    }
+]
