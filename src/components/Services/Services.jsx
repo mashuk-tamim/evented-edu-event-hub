@@ -14,7 +14,7 @@ const Services = () => {
             <div className="grid grid-col-1 md:grid-cols-2 gap-5 lg:gap-16 px-5 lg:px-16">
                 <div
                     className="border rounded-xl p-5 lg:p-10 bg-white"
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-delay="10"
                     data-aos-duration="1000"
@@ -29,7 +29,7 @@ const Services = () => {
                 </div>
                 <div
                     className="border rounded-xl p-5 lg:p-10 bg-white"
-                    data-aos="fade-left"
+                    data-aos="fade-down"
                     data-aos-offset="0"
                     data-aos-delay="10"
                     data-aos-duration="1000"
@@ -44,7 +44,7 @@ const Services = () => {
                 </div>
                 <div
                     className="border rounded-xl p-5 lg:p-10 bg-white"
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-delay="10"
                     data-aos-duration="1000"
@@ -59,7 +59,7 @@ const Services = () => {
                 </div>
                 <div
                     className="border rounded-xl p-5 lg:p-10 bg-white"
-                    data-aos="fade-left"
+                    data-aos="fade-down"
                     data-aos-offset="0"
                     data-aos-delay="10"
                     data-aos-duration="1000"
@@ -74,7 +74,7 @@ const Services = () => {
                 </div>
                 <div
                     className="border rounded-xl p-5 lg:p-10 bg-white"
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-delay="10"
                     data-aos-duration="1000"
@@ -89,7 +89,7 @@ const Services = () => {
                 </div>
                 <div
                     className="border rounded-xl p-5 lg:p-10 bg-white"
-                    data-aos="fade-left"
+                    data-aos="fade-down"
                     data-aos-offset="0"
                     data-aos-delay="10"
                     data-aos-duration="1000"
