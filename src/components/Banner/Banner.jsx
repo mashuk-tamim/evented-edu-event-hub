@@ -2,7 +2,7 @@
 
 const Banner = () => {
     return (
-        <div className='relative w-full h-[90vh]'>
+        <div className='relative w-full h-auto'>
             <div className="absolute w-full h-full bg-black opacity-50"></div>
             <img className='w-full h-full object-cover object-center' src='https://i.ibb.co/xJWYRK3/bg-1.jpg' alt="" />
             <div className='absolute top-1/3 lg:right-20'>

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Comprehensive Listings",
+        "description": "Access a vast database of diverse educational and training events, all neatly categorized for easy navigation and exploration.",
+        "image": "https://i.ibb.co/b6MLzgc/checklist.png"
+    },
+    {
+        "id": 2,
+        "title": "User-Friendly Experience",
+        "description": "Enjoy a seamless and intuitive website interface, designed for effortless event discovery, registration, and access to resources.",
+        "image": "https://i.ibb.co/Bc4cZ8J/login.png"
+    },
+    {
+        "id": 3,
+        "title": "Expertly Curated Content",
+        "description": "Benefit from handpicked workshops, webinars, and conferences conducted by industry experts, ensuring high-quality learning experiences.",
+        "image": "https://i.ibb.co/N2Kv4jK/expert.png"
+    },
+    {
+        "id": 4,
+        "title": "Event Organizer Support",
+        "description": "Empower event organizers with robust promotional tools, extensive reach, and detailed analytics, enhancing the success of their events.",
+        "image": "https://i.ibb.co/Rv9g34P/schedule.png"
+    },
+    {
+        "id": 5,
+        "title": "Interactive Virtual Events",
+        "description": "Engage in dynamic online events with cutting-edge virtual platforms, fostering real-time interactions, networking, and collaborative learning.",
+        "image": "https://i.ibb.co/mF3QF6K/conference.png"
+    },
+    {
+        "id": 6,
+        "title": "Educational Resources Hub",
+        "description": "Access a treasure trove of educational materials, including articles, guides, and exclusive content, enriching your knowledge beyond event sessions.",
+        "image": "https://i.ibb.co/xhh86dP/resources.png"
+    },
+    {
+        "id": 7,
+        "title": "Career Advancement",
+        "description": "Explore tailored career resources, expert advice, and skill development opportunities, empowering your professional growth and job prospects.",
+        "image": "https://i.ibb.co/rkB9yvv/career.png"
+    },
+    {
+        "id": 8,
+        "title": "Community Engagement",
+        "description": "Join a vibrant community of learners, educators, and industry professionals, fostering networking, idea exchange, and collaborative opportunities.",
+        "image": "https://i.ibb.co/FKKvVxx/handshake.png"
+    },
+    {
+        "id": 9,
+        "title": "Innovative Technology",
+        "description": "Experience events powered by state-of-the-art virtual technology, ensuring immersive, interactive, and high-quality learning environments.",
+        "image": "https://i.ibb.co/12KgFb5/technology.png"
+    },
+    {
+        "id": 10,
+        "title": "Trusted Platform",
+        "description": "Rely on a reputable platform known for its integrity, reliability, and commitment to providing valuable educational and training opportunities.",
+        "image": "https://i.ibb.co/8Pyw4dn/trust.png"
+    }
+]
