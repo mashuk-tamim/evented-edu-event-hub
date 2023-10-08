@@ -1,41 +1,43 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import swal from "sweetalert";
 
 const Login = () => {
+  const { googleSignIn, signIn } = useContext(AuthContext);
+  const navigate = useNavigate()
 
-    const {googleSignIn, signIn} = useContext(AuthContext);
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+    console.log(email, password);
 
-    
+    signIn(email, password)
+      .then((res) => {
+        const user = res.user;
+        console.log(user);
+        swal("Sign In Successful!", "Redirecting to the Home Page", "success");
+        navigate('/');
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
 
-    const handleSignIn = (e) =>{
-        e.preventDefault();
-        const form = new FormData(e.currentTarget);
-        const email = form.get('email');
-        const password = form.get('password');
-        console.log(email, password);
-
-        signIn(email, password)
-        .then(res => {
-            const user = res.user;
-            console.log(user);
-        })
-        .catch(error =>{
-            console.error(error);
-        })
-
-    }
-
-    const handleGoogleSignIn = () =>{
-        googleSignIn()
-        .then(res => {
-            const user = res.user;
-            console.log(user);
-        })
-        .catch(error => {
-            console.error(error);
-        })
-    }
+  const handleGoogleSignIn = () => {
+    googleSignIn()
+      .then((res) => {
+        const user = res.user;
+        console.log(user);
+        swal("Sign In Successful!", "Redirecting to the Home Page", "success");
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
 
   return (
     <div>

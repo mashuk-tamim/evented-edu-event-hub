@@ -15,11 +15,12 @@ const Navbar = () => {
   };
 
   const navLinks = (
-    <div className="flex flex-col md:flex-row gap-3 md:gap-5 lg:gap-10 font-medium">
+    <div className="flex flex-col md:flex-row gap-3 md:gap-5 lg:gap-10 font-medium text-black text-xs">
       <NavLink to="/">Home</NavLink>
       <NavLink to="/upcoming">Upcoming</NavLink>
       <NavLink to="/blogs">Blogs</NavLink>
       <NavLink to="/about">About Us</NavLink>
+      <NavLink to="/login">Login</NavLink>
     </div>
   );
   return (
@@ -44,7 +45,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-24"
+            className="menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-28"
           >
             {navLinks}
           </ul>

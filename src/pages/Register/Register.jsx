@@ -1,11 +1,10 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-import { getAuth, updateProfile } from "firebase/auth";
+import swal from "sweetalert";
 
 const Register = () => {
-  const auth = getAuth();
-  const { signUp, googleSignIn } = useContext(AuthContext);
+  const { signUp, googleSignIn, updateUserProfile } = useContext(AuthContext);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -21,18 +20,17 @@ const Register = () => {
 
     signUp(email, password)
       .then((res) => {
-        const user = res.user;
+        const user = res?.user;
         console.log(user);
-        updateProfile(auth.currentUser, {
-          displayName: name,
-          photoURL: photoUrl,
-        })
+        swal("Sign Up Successful!", "Redirecting to the Home Page", "success");
+        updateUserProfile(name, photoUrl)
           .then((res) => {
             console.log("profile updated", res.user);
           })
           .catch((error) => {
             console.error("error", error);
           });
+          <Navigate to='/'></Navigate>
       })
       .catch((error) => {
         console.error(error);
@@ -44,6 +42,8 @@ const Register = () => {
       .then((res) => {
         const user = res.user;
         console.log(user);
+        swal("Sign Up Successful!", "Redirecting to the Home Page", "success");
+        <Navigate to="/"></Navigate>;
       })
       .catch((error) => {
         console.error(error);
