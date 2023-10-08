@@ -50,17 +50,19 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">EventEd</a>
+        <Link to="/">
+          <p className="font-semibold md:text-xl">EventEd</p>
+        </Link>
       </div>
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         {user && (
-          <div className="flex gap-3 items-center border rounded-l-full rounded-r-full p-1 w-1/2 md:w-2/5 lg:w-1/3 mr-2">
-            <div className="">
+          <div className="flex gap-1 items-center  rounded-l-full rounded-r-full p-0 w-1/2 md:w-2/5 lg:w-1/3 mr-2">
+            <div className="w-1/4 md:w-1/3">
               <img
-                className="rounded-full mx-auto"
+                className="rounded-full mx-auto "
                 src={user?.photoURL}
                 alt={user?.displayName}
               />
