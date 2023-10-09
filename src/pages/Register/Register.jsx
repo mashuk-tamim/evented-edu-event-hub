@@ -2,12 +2,12 @@ import { useContext } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import swal from "sweetalert";
- import { ToastContainer, toast } from "react-toastify";
- import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const { signUp, googleSignIn, updateUserProfile } = useContext(AuthContext);
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -21,39 +21,33 @@ const Register = () => {
 
     console.log(name, photoUrl, email, password);
 
-    if(password.length<6){
-        toast.error("Password should be at least 6 characters");
-        return;
+    if (password.length < 6) {
+      toast.error("Password should be at least 6 characters");
+      return;
+    } else if (/[A-Z]/.test(password)) {
+      toast.error("Password must not contain any UPPERCASE character");
+      return;
+    } else if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      toast.error("Password must not contain any Special character");
     }
-    else if (/[A-Z]/.test(password)){
-        toast.error("Password must not contain any UPPERCASE character");
-        return;
-    }
-    else if (/[!@#$%^&*(),.?":{}|<>]/.test(password)){
-        toast.error("Password must not contain any Special character");
-    }
-      signUp(email, password)
-        .then((res) => {
-          const user = res?.user;
-          console.log(user);
-          swal(
-            "Sign Up Successful!",
-            "Redirecting to the Home Page",
-            "success"
-          );
-          updateUserProfile(name, photoUrl)
-            .then((res) => {
-              console.log("profile updated", res.user);
-            })
-            .catch((error) => {
-              console.error("error", error);
-            });
-          navigate('/')
-        })
-        .catch((error) => {
-          console.error(error);
-          toast.error(`${error.code.slice(5,error.message.length)}`);
-        });
+    signUp(email, password)
+      .then((res) => {
+        const user = res?.user;
+        console.log(user);
+        swal("Sign Up Successful!", "Redirecting to the Home Page", "success");
+        updateUserProfile(name, photoUrl)
+          .then((res) => {
+            console.log("profile updated", res.user);
+          })
+          .catch((error) => {
+            console.error("error", error);
+          });
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error(`${error.code.slice(5, error.message.length)}`);
+      });
   };
 
   const handleGoogleSignUp = () => {

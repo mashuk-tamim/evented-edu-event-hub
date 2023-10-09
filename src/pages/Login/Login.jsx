@@ -1,7 +1,9 @@
 import { useContext } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import swal from "sweetalert";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { googleSignIn, signIn } = useContext(AuthContext);
@@ -22,7 +24,8 @@ const Login = () => {
         navigate('/');
       })
       .catch((error) => {
-        console.error(error);
+        console.log(error.code);
+        toast.error("Invalid email or incorrect password");
       });
   };
 
@@ -42,7 +45,7 @@ const Login = () => {
   return (
     <div>
       <div className="min-h-screen mt-10">
-        <div className="md:w-3/5 lg:w-1/2 mx-auto bg-gray-600 rounded-xl p-10 space-y-5 border-green-400 border-2 shadow-xl">
+        <div className="w-11/12 md:w-3/5 lg:w-1/2 mx-auto bg-gray-600 rounded-xl p-10 space-y-5 border-green-400 border-2 shadow-xl">
           <h2 className="text-4xl font-bold text-center text-white">
             Login your account
           </h2>
@@ -116,6 +119,18 @@ const Login = () => {
           {/* {loginSuccess && <Navigate to="/"></Navigate>} */}
         </div>
       </div>
+      <ToastContainer
+        position="top-center"
+        autoClose={1979}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 };

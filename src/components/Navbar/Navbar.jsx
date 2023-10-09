@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import logo from '../../assets/logo/letter-e.png'
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -15,7 +16,7 @@ const Navbar = () => {
   };
 
   const navLinks = (
-    <div className="flex flex-col md:flex-row gap-3 md:gap-5 lg:gap-10 font-medium text-black text-xs">
+    <div className="flex flex-col md:flex-row gap-3 md:gap-5 lg:gap-10 font-medium text-black md:text-white text-xs md:text-sm lg:text-base">
       <NavLink to="/">Home</NavLink>
       <NavLink to="/upcoming">Upcoming</NavLink>
       <NavLink to="/blogs">Blogs</NavLink>
@@ -51,7 +52,10 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/">
-          <p className="font-semibold md:text-xl">EventEd</p>
+          <div className="flex items-center gap-1">
+            <img className="w-1/4" src={logo} alt="" />
+            <p className="font-semibold md:text-xl">EventEd</p>
+          </div>
         </Link>
       </div>
       <div className="navbar-center hidden md:flex">
