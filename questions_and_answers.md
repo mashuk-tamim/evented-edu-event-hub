@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer:?
+#### Answer:B
 
 <i>Answer is B. Because, In the first line 'greeting' has declared. But in the second line, an empty object 'greetign' is initialized. 'greeting' and 'greetign' are different and as the object 'greetign' isn't declared it will throw this error: `ReferenceError: greetign is not defined`</i>
 
@@ -43,7 +43,7 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
 <i>Answer is C. JavaScript performs type coercion and converts the number 1 to a string to perform string concatenation instead of numerical addition. As a result, the function concatenates the two values as strings, resulting in the string "12".</i>
 
@@ -69,7 +69,7 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
 <i>Answer is A. Changing the value of 'info.favoriteFood' does not affect the original array 'food'. The info object is a separate entity from the 'food' array, and changing the object's property does not modify the array.</i>
 
@@ -94,7 +94,7 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
 <i>Answer is B. In the provided code, the sayHi function expects a name parameter. When you call the function without passing any arguments, the name parameter inside the function will be undefined. However, the template string in the return statement is trying to concatenate the name parameter, which is undefined. In JavaScript, when you concatenate a string with undefined, the output will be a string containing the word "undefined".</i>
 
@@ -122,7 +122,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
 <i>Answer is C. In JavaScript, when we use a number in a condition, 0 is considered falsy, and any other non-zero number is considered truthy. So, the condition if (num) evaluates to true for all elements in the 'nums' array except 0. For num = 0, the condition evaluates to false, and nothing happens. For the other elements (1, 2, and 3), the condition evaluates to true, and count is incremented by 1 for each of these elements. Thus, the code will give 3. </i>
 
