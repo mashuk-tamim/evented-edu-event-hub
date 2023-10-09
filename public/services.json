@@ -33,10 +33,10 @@
     },
     {
         "id": "5",
-        "name": "Educational Resources and Materials",
-        "shortDescription": "Access a wealth of educational content, including downloadable materials, articles, videos, and exclusive resources, enhancing learning beyond events.",
-        "detailedDescription": "Dive into a world of knowledge through our educational resources section. Access a wealth of learning materials, including downloadable resources, thought-provoking whitepapers, insightful articles, and enlightening videos. Immerse yourself in exclusive content curated in collaboration with speakers and trainers, enhancing your learning journey beyond the events. Enrich your understanding and broaden your horizons with our curated educational materials.",
-        "price": "$120",
+        "name": "Workshops and Conferences Hosting",
+        "shortDescription": "Your gateway to impactful knowledge-sharing events. Host and attend workshops, webinars, and conferences seamlessly.",
+        "detailedDescription": "Welcome to the ultimate platform for hosting and participating in transformative workshops and conferences. Whether you're an organizer looking for a streamlined hosting experience or an attendee seeking enriching events, our platform delivers unparalleled convenience. Host interactive webinars, insightful workshops, and thought-provoking conferences effortlessly. Engage with experts, network with peers, and elevate your knowledge journey with us.",
+        "price": "$600",
         "image": "https://i.ibb.co/Q6y4b7m/resources.jpg"
     },
     {

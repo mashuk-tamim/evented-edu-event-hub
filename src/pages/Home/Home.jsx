@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 import ChooseUs from "../../components/ChooseUs/ChooseUs";
 import Services from "../../components/Services/Services";
+import Testimonial from "../../components/Testimonial/Testimonial";
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
             <Banner></Banner>
             <Services></Services>
             <ChooseUs></ChooseUs>
+            <Testimonial></Testimonial>
         </div>
     );
 };

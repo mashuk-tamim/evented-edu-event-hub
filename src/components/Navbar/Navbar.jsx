@@ -16,16 +16,23 @@ const Navbar = () => {
   };
 
   const navLinks = (
-    <div className="flex flex-col md:flex-row gap-3 md:gap-5 lg:gap-10 font-medium text-black md:text-white text-xs md:text-sm lg:text-base">
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/upcoming">Upcoming</NavLink>
-      <NavLink to="/blogs">Blogs</NavLink>
-      <NavLink to="/about">About Us</NavLink>
-      <NavLink to="/login">Login</NavLink>
+    <div className="flex flex-col md:flex-row font-medium text-black md:text-white text-xs md:text-sm lg:text-base">
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/upcoming">Upcoming</NavLink>
+      </li>
+      <li>
+        <NavLink to="/blogs">Blogs</NavLink>
+      </li>
+      <li>
+        <NavLink to="/login">Login</NavLink>
+      </li>
     </div>
   );
   return (
-    <div className="navbar bg-black text-white font-montserrat lg:py-6">
+    <div className="navbar bg-gray-800 text-white font-montserrat lg:py-3 px-3 md:px-6">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost md:hidden">
@@ -63,12 +70,12 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user && (
-          <div className="flex gap-1 items-center  rounded-l-full rounded-r-full p-0 w-1/2 md:w-2/5 lg:w-1/3 mr-2">
-            <div className="w-1/4 md:w-1/3">
+          <div className="flex gap-1 items-center  rounded-l-full rounded-r-full p-0 w-1/2 mr-2">
+            <div className="w-1/4 md:w-1/3 lg:w-1/5">
               <img
                 className="rounded-full mx-auto "
                 src={user?.photoURL}
-                alt={user?.displayName}
+                alt=""
               />
             </div>
             <div className="">
@@ -81,14 +88,16 @@ const Navbar = () => {
             <Link to="/login">
               <button
                 onClick={handleSignOut}
-                className="py-2 px-4 rounded-lg lg:btn text-xs text-black bg-white font-medium"
+                className="py-2 px-3 rounded-lg text-xs md:text-sm lg:btn lg:btn-success text-gray-800 bg-[#36d399] font-semibold"
               >
                 Log out
               </button>
             </Link>
           ) : (
             <Link to="/login">
-              <button className="btn">Login</button>
+              <button className="py-2 px-3 rounded-lg text-xs md:text-sm lg:btn lg:btn-success text-gray-800 bg-[#36d399] font-semibold">
+                Login
+              </button>
             </Link>
           )}
         </div>

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import swal from "sweetalert";
 import { ToastContainer, toast } from "react-toastify";
@@ -7,7 +7,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { googleSignIn, signIn } = useContext(AuthContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location)
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -20,8 +22,8 @@ const Login = () => {
       .then((res) => {
         const user = res.user;
         console.log(user);
-        swal("Sign In Successful!", "Redirecting to the Home Page", "success");
-        navigate('/');
+        swal("Sign In","Successful", "success");
+        navigate(location?.state ? location.state : '/');
       })
       .catch((error) => {
         console.log(error.code);
@@ -31,11 +33,11 @@ const Login = () => {
 
   const handleGoogleSignIn = () => {
     googleSignIn()
-      .then((res) => {
-        const user = res.user;
-        console.log(user);
-        swal("Sign In Successful!", "Redirecting to the Home Page", "success");
-        navigate("/");
+      .then(() => {
+        // const user = res.user;
+        // console.log(user);
+        swal("Sign In Successful", "", "success");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
@@ -101,16 +103,6 @@ const Login = () => {
                   className="text-xs md:text-sm lg:text-base"
                 >
                   Continue with Google
-                </button>
-                <p></p>
-              </div>
-              <div className="flex border border-gray-400 w-4/5 mx-auto rounded-full p-2 justify-between">
-                <img
-                  className="w-1/12"
-                  src="https://i.ibb.co/TbxB3zp/github.png"
-                />
-                <button className="text-xs md:text-sm lg:text-base">
-                  Continue with Github
                 </button>
                 <p></p>
               </div>

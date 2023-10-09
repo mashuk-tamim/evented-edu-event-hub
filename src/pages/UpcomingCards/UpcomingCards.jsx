@@ -6,7 +6,7 @@ UpcomingCards.propTypes = {
 };
 
 function UpcomingCards({ upcomingEvent }) {
-  console.log(upcomingEvent);
+//   console.log(upcomingEvent);
   const { title, date, time, location, description } = upcomingEvent;
   return (
     <div className="border rounded-xl h-[500px] bg-gray-100 ">

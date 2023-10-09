@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 const Register = () => {
   const { signUp, googleSignIn, updateUserProfile } = useContext(AuthContext);
   const navigate = useNavigate();
-
   const handleRegister = (e) => {
     e.preventDefault();
 
@@ -34,7 +33,7 @@ const Register = () => {
       .then((res) => {
         const user = res?.user;
         console.log(user);
-        swal("Sign Up Successful!", "Redirecting to the Home Page", "success");
+        swal("Sign Up Successful!", "Please login to continue", "success");
         updateUserProfile(name, photoUrl)
           .then((res) => {
             console.log("profile updated", res.user);
@@ -42,7 +41,7 @@ const Register = () => {
           .catch((error) => {
             console.error("error", error);
           });
-        navigate("/");
+        navigate("/login");
       })
       .catch((error) => {
         console.error(error);
@@ -55,8 +54,8 @@ const Register = () => {
       .then((res) => {
         const user = res.user;
         console.log(user);
-        swal("Sign Up Successful!", "Redirecting to the Home Page", "success");
-        <Navigate to="/"></Navigate>;
+        swal("Sign Up Successful!", "Please login to continue", "success");
+        <Navigate to="/login"></Navigate>;
       })
       .catch((error) => {
         console.error(error);
@@ -132,16 +131,6 @@ const Register = () => {
                 className="text-xs md:text-sm lg:text-base"
               >
                 Continue with Google
-              </button>
-              <p></p>
-            </div>
-            <div className="flex border border-gray-400 w-4/5 mx-auto rounded-full p-2 justify-between">
-              <img
-                className="w-1/12"
-                src="https://i.ibb.co/TbxB3zp/github.png"
-              />
-              <button className="text-xs md:text-sm lg:text-base">
-                Continue with Github
               </button>
               <p></p>
             </div>
