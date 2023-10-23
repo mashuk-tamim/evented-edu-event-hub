@@ -63,7 +63,7 @@ const Register = () => {
   };
   return (
     <div className="min-h-screen my-12">
-      <div className="w-3/4 md:w-3/5 lg:w-1/2 mx-auto bg-gray-600 rounded-xl p-10 space-y-5 border-green-400 border-2 shadow-xl">
+      <div className="w-11/12 md:w-3/5 lg:w-1/2 mx-auto bg-gray-600 rounded-xl p-10 space-y-5 border-green-400 border-2 shadow-xl">
         <h2 className="text-2xl md:text-4xl font-bold text-center text-white">
           Please Register
         </h2>
